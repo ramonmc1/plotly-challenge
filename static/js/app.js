@@ -3,7 +3,7 @@ function init() {
 
 //Needed to bypass CORS restrictions when running the Json file locally
 //const sampleData = "http://127.0.0.1:8887/samples.json";
-const sampleData = "samples.json";
+const sampleData = "/samples.json";
 d3.json(sampleData).then(function(data) {
   let resultini= data.samples;
   let resultname= data.names;
